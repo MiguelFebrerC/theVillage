@@ -1,0 +1,23 @@
+<form method="POST" class="form form-inline" (ngSubmit)="submit()">
+    <div class="form-group">
+        <label for="txtNombre">Nombre</label>
+        <input type="text" id="txtNombre" name="txtNombre" [(ngModel)]="model.nombre"/>
+    </div>
+    <div class="form-group">
+        <label for="txtAppelido">Appelido</label>
+        <input type="text" id="txtAppelido" name="txtAppelido" [(ngModel)]="model.apellido"/>
+    </div>
+    <div class="form-group">
+        <label for="txtTelefono">Telefono</label>
+        <input type="text" id="txtTelefono" name="txtTelefono" [(ngModel)]="model.telefono"/>
+    </div>
+    <div class="form-group">
+        <label for="txtObservaciones">Observaciones</label>
+        <input type="text" id="txtObservaciones" name="txtObservaciones" [(ngModel)]="model.Observacion"/>
+    </div>            
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <button type="submit" class="btn btn-primary" >Guardar</button>
+        </div>    
+    </div>                
+</form>

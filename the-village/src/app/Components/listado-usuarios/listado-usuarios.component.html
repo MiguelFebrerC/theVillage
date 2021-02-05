@@ -1,0 +1,22 @@
+<table class="table table-striped">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Telefono</th>
+        <th>Observaciones</th>
+    </tr>
+    <tr *ngFor='let item of usuarios; let i = index'>
+        <td>
+            {{item.nombre}}
+        </td>
+        <td>
+            {{item.apellido}}
+        </td>    
+        <td>
+            {{item.telefono}}
+        </td>    
+        <td>
+            {{item.Observacion}}
+        </td>        
+    </tr>
+</table>
